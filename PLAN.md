@@ -31,3 +31,6 @@ CHANGES: This plan stayed the same
 Selection Criterion
 
 Choose the alternative that best communicates the character's personality and remains recognizable at small sizes.
+
+Final Selection: Branch A Nervous Halo Face
+I chose this branch because I believe that the halo and freckles highlight the personality the best. The other branches don't communicate the face as well as A does.
