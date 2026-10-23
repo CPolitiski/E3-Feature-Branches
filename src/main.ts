@@ -1,3 +1,11 @@
+// Credit: Unknown creator https://www.pngwing.com/en/free-png-varaq#google_vignette Free to use image
+// @deno-types="./asset-url.d.ts"
+import crackedTextureUrl from "./assets/Cracked_Texture.png?no-inline";
+
+// Credit: Unknown creator https://www.pngwing.com/en/free-png-qnwoy#google_vignette Free to use image
+// @deno-types="./asset-url.d.ts"
+import coloredEyeUrl from "./assets/Colored_Eye.png?no-inline";
+
 const portrait = document.querySelector<HTMLDivElement>("#portrait")!;
 const spin = document.querySelector<HTMLButtonElement>("#spin")!;
 
@@ -58,6 +66,34 @@ mouth.setAttribute("stroke", "#302c29");
 mouth.setAttribute("stroke-width", "4");
 mouth.setAttribute("stroke-linecap", "round");
 face.append(mouth);
+
+const crackImage = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+
+crackImage.setAttribute("href", crackedTextureUrl);
+crackImage.setAttribute("x", "15");
+crackImage.setAttribute("y", "30");
+crackImage.setAttribute("width", "175");
+crackImage.setAttribute("height", "150");
+crackImage.setAttribute("preserveAspectRatio", "xMidYMid meet");
+
+face.append(crackImage);
+
+const coloredEyeImage = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "image",
+);
+
+coloredEyeImage.setAttribute("href", coloredEyeUrl);
+coloredEyeImage.setAttribute("x", "58");
+coloredEyeImage.setAttribute("y", "70");
+coloredEyeImage.setAttribute("width", "28");
+coloredEyeImage.setAttribute("height", "24");
+coloredEyeImage.setAttribute("preserveAspectRatio", "xMidYMid meet");
+
+face.append(coloredEyeImage);
 
 portrait.append(face);
 
